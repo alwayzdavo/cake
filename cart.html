@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>cart</title>
+</head>
+<body>
+    <img src="image/cake.png" alt="" width="150px">
+
+    <nav class="navbar">
+        <ul class="link-container">
+            <li class="link-item"><a href="index.html" class="link active">home</a></li>
+            <li class="link-item"><a href="product.html" class="link">product</a></li>
+            <li class="link-item"><a href="#" class="link">about</a></li>
+            <li class="link-item"><a href="#" class="link">contact</a></li>
+        </ul>
+
+        <!-- interaction -->
+    
+    <div class="user-interaction">
+        <div class="search-box">
+            <input type="text" class="search" placeholder="search items">
+            <button class="search-btn"><img src="image/search.png" alt=""></button>
+        </div>
+        <div class="cart">
+            <img src="image/cart.png" class="cart-icon" width="30px" alt="">
+            <span class="cart-item-count">00</span>
+        </div>
+    </nav>
+
+        <!-- cart -->
+
+  <h1>Shopping Cart</h1>
+  <div class="cart-container">
+          <!-- render cart -->
+
+  </div>
+
+  <div class="summary">
+    <h2>Order Summary</h2>
+    
+    <div class="cart-items">
+      <!-- Your cart items here -->
+    </div>
+    
+    <div class="summary-totals">
+      <div class="subtotal">
+        <span>Subtotal:</span>
+        <span class="subtotal-amount">&#8358;0</span>
+      </div>
+      
+      <div class="tax">
+        <span>Tax (10%):</span>
+        <span class="tax-amount">&#8358;0</span>
+      </div>
+      
+      <div class="total">
+        <span>Total:</span>
+        <span class="total-amount">&#8358;0</span>
+      </div>
+    </div>
+  </div>
+  
+
+        <script src="cart.js"></script>
+        <script src="nav.js"></script>
+</body>
+</html>
