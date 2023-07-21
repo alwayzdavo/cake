@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-page.css">
+    <title>cake</title>
+</head>
+<body>
+    <section>
+        <img src="image/cake.png" alt="" width="150px">
+
+        <nav class="navbar">
+            <ul class="link-container">
+                <li class="link-item"><a href="index.html" class="link active">home</a></li>
+                <li class="link-item"><a href="product.html" class="link">product</a></li>
+                <li class="link-item"><a href="#" class="link">about</a></li>
+                <li class="link-item"><a href="#" class="link">contact</a></li>
+            </ul>
+
+            <!-- interaction -->
+        
+        <div class="user-interaction">
+            <div class="search-box">
+                <input type="text" class="search" placeholder="search items">
+                <button class="search-btn"><img src="image/search.png" alt=""></button>
+            </div>
+            <div class="cart">
+               <a href="cart.html"> <img src="image/cart.png" class="cart-icon" width="30px" alt=""></a>
+                <span class="cart-item-count">00</span>
+            </div>
+            <div class="user">
+                <img src="image/user.png" class="user-icon" width="30px" alt="">
+                <div class="user-icon-popup">
+                    <!-- <p>login to your account</p>
+                    <a>login</a> -->
+        
+                </div>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+    <section class="product-section">
+        <!-- upload input -->
+        <div class="image-upload-container">
+         <input type="file" id="upload-image" accept="image/png, image/jpeg" hidden>
+         <label for="upload-image" class="upload-overlay">upload image</label>
+         <img class="product-img">
+        </div>
+ 
+      <div class="product-page-container">
+        <h3 class="product-page-title" contenteditable="true" data-placeholder="Product Name">creamy cake</h3>
+        <h3 class="product-page-des" contenteditable="true" data-placeholder="Description"></h3>
+
+        <div class="rating">
+            <img src="image/" alt="">
+            <img src="image/" alt="">
+            <img src="image/" alt="">
+            <img src="image/" alt="">
+        </div>
+      </div>
+     </section>
+     <script src="cart.js"></script>
+     <script src="app.js"></script>
+</body>
