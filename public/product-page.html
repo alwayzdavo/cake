@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cake product</title>
+    <link rel="stylesheet" href="css/product-page.css">
+    <title>cake</title>
 </head>
 <body>
-
     <section>
         <img src="image/cake.png" alt="" width="150px">
 
@@ -16,7 +16,7 @@
             <ul class="link-container">
                 <li class="link-item"><a href="index.html" class="link active">home</a></li>
                 <li class="link-item"><a href="product.html" class="link">product</a></li>
-                <li class="link-item"><a href="about.html" class="link">about</a></li>
+                <li class="link-item"><a href="#" class="link">about</a></li>
                 <li class="link-item"><a href="#" class="link">contact</a></li>
             </ul>
 
@@ -28,7 +28,7 @@
                 <button class="search-btn"><img src="image/search.png" alt=""></button>
             </div>
             <div class="cart">
-               <a href="cart.html"><img src="image/cart.png" class="cart-icon" width="30px" alt=""></a> 
+               <a href="cart.html"> <img src="image/cart.png" class="cart-icon" width="30px" alt=""></a>
                 <span class="cart-item-count">00</span>
             </div>
             <div class="user">
@@ -43,38 +43,26 @@
         </nav>
     </section>
 
-    <header>
-        <div class="header-section-product">
+    <section class="product-section">
+        <!-- upload input -->
+        <div class="image-upload-container">
+         <input type="file" id="upload-image" accept="image/png, image/jpeg" hidden>
+         <label for="upload-image" class="upload-overlay">upload image</label>
+         <img class="product-img">
         </div>
-    </header>
+ 
+      <div class="product-page-container">
+        <h3 class="product-page-title" contenteditable="true" data-placeholder="Product Name">creamy cake</h3>
+        <h3 class="product-page-des" contenteditable="true" data-placeholder="Description"></h3>
 
-    <!-- product-section -->
-    <div class="product-text">
-        <h2>PRODUCTS</h2>
-    </div>
-
-    <div class="product-container1">
-        <!-- render here -->
-    </div>
-
-
-    <div class="pagination">
-        <button id="prev-page">Previous</button>
-        <button id="next-page">Next</button>
+        <div class="rating">
+            <img src="image/" alt="">
+            <img src="image/" alt="">
+            <img src="image/" alt="">
+            <img src="image/" alt="">
+        </div>
       </div>
-
-      <footer>
-        
-        <img src="image/facebook icon.png"class= "footer-icon" alt="">
-        <img src="image/instagram-new.png"class= "footer-icon"alt="">
-        <img src="image/youtube icon.png" class= "footer-icon" alt="">
-        <img src="image/twitter icon.png" class= "footer-icon" alt="">
-    </footer>
-
-
-       <script src="product.js"></script>
-       <script src="search.js"></script> 
-      <script src="app.js"></script>
-      <script src="nav.js"></script>
+     </section>
+     <script src="cart.js"></script>
+     <script src="app.js"></script>
 </body>
-</html>

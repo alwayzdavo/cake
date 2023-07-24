@@ -11,7 +11,7 @@
 .header-section{
     width: 100%;
     height: 170vh;
-    background: url(image/CAKE4.jpg);
+    background: url(../image/CAKE4.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
 .header-section-product{
     width: 100%;
     height: 250vh;
-    background: url(image/CAKE3.jpg);
+    background: url(../image/CAKE3.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -101,6 +101,40 @@ span:hover{
     transform: translateY(-50%);
 
 }
+
+.user-icon-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-icon-popup.show {
+    display: block;
+  }
+
+  .user-icon-popup p{
+    font-size: .9rem;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+
+.user-icon-popup a{
+    display: block;
+    margin: 20px auto 0;
+    text-decoration: none;
+    color: #fff;
+    background: #d5be8b;
+    padding: 10px;
+    width: 100px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+  
 
 .search-box{
     position: relative;
@@ -370,10 +404,11 @@ footer{
     margin-bottom: 20px;
 }
 
-.pagination button {
+.pagination button , .submit-btn{
     margin: 0 5px;
     padding: 5px 10px;
     background-color: #4CAF50;
+    margin-top: 12px;
     color: #fff;
     border: none;
     border-radius: 5px;

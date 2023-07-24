@@ -1,0 +1,156 @@
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.form-container{
+    width: 70%;
+    min-width: 300px;
+    height: 85vh;
+    background: #fff;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+
+}
+
+.form-img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form{
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+input, textarea{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #b9b9b9;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 60px;
+    font-family: 'lato', sans-serif;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: #000;
+    text-transform: capitalize;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #d5be8b;
+}
+
+input:focus::placeholder,  textarea:focus::placeholder{
+    color: #d5be8b;
+}
+
+.error{
+    display: block;
+    font-size: .8rem;
+    color: rgb(255, 41, 41);
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    user-select: none;
+    opacity: 0;
+}
+
+.error.show{
+    opacity: 1;
+}
+.other-form-link{
+    font-family: 'lato', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    margin-top: 12px;
+}
+#tc{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#tc:checked{
+    background: #d5be8b;
+}
+
+#tc::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../images/heart.png);
+    background-size: contain;
+    display: none;
+}
+
+#tc:checked::before{
+    display: block;
+}
+
+.tc-text{
+    margin-left: 5px;
+    font-size: .8rem;
+    font-family: 'lato', sans-serif;
+}
+
+/* 404 */
+
+.four-0-four-section{
+    width: 100%;
+    height: 100vh;
+    background: url(../image/CAKE4.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.sub-line{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+}
+.sub-line a{
+    color: #fff;
+}
